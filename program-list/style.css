@@ -1,0 +1,245 @@
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.desktop {
+	display: none;
+}
+@media (width>1024px) {
+	.mobile {
+		display: none;
+	}
+	.desktop {
+		display: block;
+	}
+	
+}
+
+header {
+	background-color: #1E75BB;
+	display: flex;
+	padding: 8px;
+	flex-direction: column;
+	gap: 8px;
+	font-family: 'Montserrat';
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 12.19px;
+	text-align: center;
+	color: #fff;
+}
+header div {
+	display: flex;
+	justify-content: flex-end;
+}
+@media (width>1024px) {
+	header {
+		flex-direction: row-reverse;
+		justify-content: end;
+		align-items: center;
+		gap: 24px;
+		font-size: 16px;
+
+	}
+	.desktop {
+		display: block;
+	}
+}
+.burger {
+	width: 28px;
+	height: 16px;
+	rotate: 270deg;
+	top: 0.5rem;
+	right: 8px;
+	position: relative;
+	display: flex;
+	@media (width>1024px) {
+		display: none;
+	}
+}
+.nav-bar {
+	font-family: 'Montserrat';
+	font-size: 28px;
+	font-weight: 400;
+	text-align: center;
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	@media (width<=1024px) {
+		display: none;
+	}
+}
+.navigate {
+	display: flex;
+	justify-content: space-between;
+	margin: 8px;
+	position: sticky;
+	top:0;
+	background-color: #fff;
+}
+.burger_mobile {
+	font-size: 20px;
+	font-weight: 900;
+	color: #1E75BB;
+}
+.logo {
+	width: 210px;
+	height: 45px;
+	@media (width>1024) {
+		width: 376px;
+		height: 82px;
+	}
+}
+.title {
+	font-family: "Montserrat";
+	color: #fff;
+	background-color: #7C6EAF;
+	text-align: center;
+	padding: 12px;
+}
+.hotkeys {
+	font-family: "Montserrat";
+	font-size: 9px;
+	padding: 4px 0;
+	font-weight: 400;
+	color: #888888;
+	background-color: #EDEDED;
+	@media (width>1024px) {
+		padding-left: 5rem;;
+	}
+}
+.information {
+	box-sizing: border-box;
+	margin: 12px 8px;
+	border: 1px solid #56B0EE;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: justify;
+	font-weight: 400;
+	color: #888888;
+	background-color: #56B0EE;
+	@media (width>1024px) {
+		font-size: 15px;
+		max-width: 890px;
+		margin:auto;
+		margin-top: 44px;
+	}
+	& .i {
+		& span {
+			margin: 4px;
+			font-family: "Montserrat";
+			font-weight: 800;
+			font-size: 16px;
+			background-color: #fff;
+			border-radius: 50%;
+			width: 23px;
+			height: 23px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	& .info__description {
+		height: 100%;
+		padding: 8px 8px 8px 10px;
+		background-color: #fff;
+	}
+}
+.button {
+	color: #fff;
+	background-color: #FFAE34;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	border-radius: 50px;
+	height: 50px;
+	width: 279px;
+}
+.program-wrapper {
+	margin-top: 50px;
+	background-color: #F5F5F5;
+	color: #888888;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	position: relative;
+	flex-flow: column nowrap;
+	border-radius: 10px;
+	& .img-wrapper {
+		display: flex;
+		justify-content: center;
+		& img {
+			border-radius: 100px;
+			position: absolute;
+			top: -32px;
+			width: 86px;
+			height: 74px;
+		}
+	}
+	@media (width>1024px) {
+
+	}
+	& .program-title {
+		padding-top: 72px;
+		font-family: "Montserrat";
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 24.38px;
+		text-align: center;
+		color: #1E75BB;
+
+	}
+	& .program-cliets {
+		font-family: "Montserrat";
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 19.5px;
+		text-align: center;
+
+	}
+	& .program-description {
+		font-family: "Inter";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16.94px;
+		text-align: center;
+
+	}
+
+	& .program-info {
+		font-family: "Inter";
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 16.94px;
+		text-align: center;
+
+	}
+}
+.information, .description {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.program-description, .program-info {
+	margin-left: 32px;
+	margin-right: 32px;
+}
+@media (width>1024px) {
+	.description {
+		margin-left: 90px;
+		margin-right: 90px;
+		display: flex;
+		flex-direction: row;
+		gap: 16px;
+		justify-content: space-between;
+		& .program-wrapper {
+			max-width: 560px;
+		}
+	}
+	& .information {
+		margin: auto;
+		margin-top: 44px;
+	}
+}
+button:hover {
+	cursor: pointer;
+}
